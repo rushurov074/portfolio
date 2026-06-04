@@ -657,8 +657,14 @@
   .whitespace-nowrap {
     white-space: nowrap;
   }
+  .text-\[\#2d2d2f\] {
+    color: #2d2d2f;
+  }
   .text-\[\#30d158\] {
     color: #30d158;
+  }
+  .text-\[\#0096FF\] {
+    color: #0096FF;
   }
   .text-\[\#2997ff\] {
     color: #2997ff;
@@ -668,6 +674,9 @@
   }
   .text-\[\#111112\] {
     color: #111112;
+  }
+  .text-\[\#424245\] {
+    color: #424245;
   }
   .text-\[\#bf5af2\] {
     color: #bf5af2;
