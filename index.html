@@ -4,260 +4,218 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ruslan Ushurov is a student developer focused on AI, data analysis, full-stack projects, and computer science education.">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png">
     <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <meta name="theme-color" content="#111113">
     <title>Ruslan Ushurov | Student Developer</title>
     <script defer src="https://cloud.umami.is/script.js" data-website-id="775607b7-261a-4ee5-afc1-3e16a8bd41f9"></script>
-    <link href="./output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-    </style>
+    <link href="./site.css" rel="stylesheet">
 </head>
-<body class="bg-[#111113] text-[#f5f5f7] antialiased">
-    <nav class="sticky top-0 z-50 border-b border-white/10 bg-[#161617]/80 backdrop-blur-xl">
-        <div class="mx-auto flex h-11 max-w-6xl items-center justify-between px-5 text-xs text-[#f5f5f7]/80 sm:px-6">
-            <a href="#" class="font-semibold tracking-tight text-[#f5f5f7]">Ruslan Ushurov</a>
-            <div class="hidden items-center gap-8 sm:flex">
-                <a href="#about" class="transition-colors hover:text-white">About</a>
-                <a href="#experience" class="transition-colors hover:text-white">Experience</a>
-                <a href="#projects" class="transition-colors hover:text-white">Projects</a>
-                <a href="#contact" class="transition-colors hover:text-white">Contact</a>
+<body>
+    <nav class="top-nav">
+        <div class="nav-inner">
+            <a href="#" class="brand-link">Ruslan Ushurov</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </div>
-            <a href="https://github.com/rushurov074" target="_blank" rel="noopener noreferrer" class="font-semibold text-[#2997ff] hover:underline">
-                GitHub
-            </a>
+            <a href="https://github.com/rushurov074" target="_blank" rel="noopener noreferrer" class="nav-cta">GitHub</a>
         </div>
     </nav>
 
-    <header class="bg-[#111113]">
-        <div class="mx-auto flex min-h-[calc(100vh-44px)] max-w-6xl flex-col items-center justify-center px-5 py-20 text-center sm:px-6">
-            <p class="mb-4 text-sm font-semibold text-[#a1a1a6]">Class of 2028 · AI, software, and data</p>
-            <h1 class="max-w-5xl text-5xl font-black leading-none tracking-tight text-[#f5f5f7] sm:text-7xl lg:text-8xl">
-                Ruslan Ushurov
-            </h1>
-            <p class="mt-5 max-w-3xl text-2xl font-semibold leading-tight tracking-tight text-[#f5f5f7] sm:text-3xl">
-                Student developer building AI tools, simulations, and predictive models.
-            </p>
-            <p class="mt-5 max-w-2xl text-lg leading-8 text-[#a1a1a6]">
-                I am preparing for a future in machine learning, AI engineering, or software engineering by building real projects and teaching others how to code.
-            </p>
-            <div class="mt-8 flex flex-wrap justify-center gap-x-8 gap-y-3 text-lg font-medium text-[#2997ff]">
-                <a href="#projects" class="hover:underline">See my work &gt;</a>
-                <a href="./assets/Summer Programming Syllabus.pdf" target="_blank" rel="noopener noreferrer" class="hover:underline">View syllabus &gt;</a>
+    <header class="hero">
+        <div class="hero-inner">
+            <p class="eyebrow">Class of 2028 · AI, software, and data</p>
+            <h1>Ruslan Ushurov</h1>
+            <p class="hero-lede">Student developer building AI tools, simulations, and predictive models.</p>
+            <p class="hero-copy">I am preparing for a future in machine learning, AI engineering, or software engineering by building real projects and teaching others how to code.</p>
+            <div class="link-row">
+                <a href="#projects">See my work &gt;</a>
+                <a href="./assets/Summer Programming Syllabus.pdf" target="_blank" rel="noopener noreferrer">View syllabus &gt;</a>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="border-y border-white/10 bg-[#1d1d1f]">
-            <div class="mx-auto grid max-w-6xl grid-cols-2 px-5 text-center sm:grid-cols-4 sm:px-6">
-                <div class="py-7">
-                    <p class="text-sm font-semibold text-[#f5f5f7]">High Honor Roll</p>
-                    <p class="mt-1 text-xs text-[#a1a1a6]">Warsaw High School</p>
+        <section class="achievement-strip" aria-label="Education highlights">
+            <div class="achievement-grid">
+                <div>
+                    <p>High Honor Roll</p>
+                    <span>Warsaw High School</span>
                 </div>
-                <div class="py-7">
-                    <p class="text-sm font-semibold text-[#f5f5f7]">Dual Enrollment</p>
-                    <p class="mt-1 text-xs text-[#a1a1a6]">Genesee Community College</p>
+                <div>
+                    <p>Dual Enrollment</p>
+                    <span>Genesee Community College</span>
                 </div>
-                <div class="py-7">
-                    <p class="text-sm font-semibold text-[#f5f5f7]">CS50x + CS50P</p>
-                    <p class="mt-1 text-xs text-[#a1a1a6]">Harvard edX</p>
+                <div>
+                    <p>CS50x + CS50P</p>
+                    <span>Harvard edX</span>
                 </div>
-                <div class="py-7">
-                    <p class="text-sm font-semibold text-[#f5f5f7]">National Honor Society</p>
-                    <p class="mt-1 text-xs text-[#a1a1a6]">NHS</p>
+                <div>
+                    <p>National Honor Society</p>
+                    <span>NHS</span>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="mx-auto grid max-w-6xl gap-10 px-5 py-24 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+        <section id="about" class="split-section">
             <div>
-                <p class="text-sm font-semibold text-[#a1a1a6]">About</p>
-                <h2 class="mt-3 text-4xl font-black leading-tight tracking-tight text-[#f5f5f7] sm:text-5xl">
-                    Curious, technical, and focused on machine learning.
-                </h2>
+                <p class="section-kicker">About</p>
+                <h2>Curious, technical, and focused on machine learning.</h2>
             </div>
-            <div class="space-y-6 text-lg leading-8 text-[#a1a1a6]">
-                <p>
-                    Hi! I'm Ruslan Ushurov. Currently, I'm a high school sophomore and I'm focused on a pathway that will lead me to becoming a Machine Learning Engineer, AI Engineer, or Software Engineer. My main focus is Machine Learning, meaning I would like to go to college to receive a PhD in Machine Learning.
-                </p>
-                <p>
-                    I like building projects that connect technical ideas to real users: AI feedback tools, sports prediction systems, games, and education projects that make computer science easier to start.
-                </p>
-                <div class="flex flex-wrap gap-2 pt-2">
-                    <span class="rounded-full bg-[#1d1d1f] px-4 py-2 text-sm font-semibold text-[#f5f5f7] ring-1 ring-white/10">Python</span>
-                    <span class="rounded-full bg-[#1d1d1f] px-4 py-2 text-sm font-semibold text-[#f5f5f7] ring-1 ring-white/10">JavaScript</span>
-                    <span class="rounded-full bg-[#1d1d1f] px-4 py-2 text-sm font-semibold text-[#f5f5f7] ring-1 ring-white/10">React</span>
-                    <span class="rounded-full bg-[#1d1d1f] px-4 py-2 text-sm font-semibold text-[#f5f5f7] ring-1 ring-white/10">Flask</span>
-                    <span class="rounded-full bg-[#1d1d1f] px-4 py-2 text-sm font-semibold text-[#f5f5f7] ring-1 ring-white/10">Node.js</span>
-                    <span class="rounded-full bg-[#1d1d1f] px-4 py-2 text-sm font-semibold text-[#f5f5f7] ring-1 ring-white/10">Data Analysis</span>
-                    <span class="rounded-full bg-[#1d1d1f] px-4 py-2 text-sm font-semibold text-[#f5f5f7] ring-1 ring-white/10">GitHub</span>
-                    <span class="rounded-full bg-[#1d1d1f] px-4 py-2 text-sm font-semibold text-[#f5f5f7] ring-1 ring-white/10">Google Workspace</span>
+            <div class="body-copy">
+                <p>Hi! I'm Ruslan Ushurov. Currently, I'm a high school sophomore and I'm focused on a pathway that will lead me to becoming a Machine Learning Engineer, AI Engineer, or Software Engineer. My main focus is Machine Learning, meaning I would like to go to college to receive a PhD in Machine Learning.</p>
+                <p>I like building projects that connect technical ideas to real users: AI feedback tools, sports prediction systems, games, and education projects that make computer science easier to start.</p>
+                <div class="skill-list">
+                    <span>Python</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>Flask</span>
+                    <span>Node.js</span>
+                    <span>Data Analysis</span>
+                    <span>GitHub</span>
+                    <span>Google Workspace</span>
                 </div>
             </div>
         </section>
 
-        <section id="experience" class="bg-[#161617] py-24">
-            <div class="mx-auto max-w-6xl px-5 sm:px-6">
-                <div class="mx-auto max-w-3xl text-center">
-                    <p class="text-sm font-semibold text-[#a1a1a6]">Experience</p>
-                    <h2 class="mt-3 text-4xl font-black leading-tight tracking-tight text-[#f5f5f7] sm:text-5xl">
-                        Leadership and research, arranged with purpose.
-                    </h2>
-                </div>
+        <section id="experience" class="experience-section">
+            <div class="section-heading">
+                <p class="section-kicker">Experience</p>
+                <h2>Leadership and research, arranged with purpose.</h2>
+            </div>
 
-                <div class="mt-14 grid gap-4 lg:grid-cols-2">
-                    <article class="rounded-[28px] bg-[#1d1d1f] p-8 shadow-sm ring-1 ring-white/10">
-                        <div class="flex flex-wrap items-center justify-between gap-3">
-                            <h3 class="text-2xl font-bold tracking-tight text-[#f5f5f7]">Instructor</h3>
-                            <span class="text-sm font-semibold text-[#a1a1a6]">Summer 2026</span>
-                        </div>
-                        <p class="mt-1 text-sm font-semibold text-[#2997ff]">Warsaw Public Library</p>
-                        <p class="mt-4 text-sm leading-7 text-[#a1a1a6]">
-                            Assisted in executing a community initiative utilizing a library grant. Developed curriculum for and led a comprehensive six-day introductory Python programming course designed for teens and adults to bridge digital literacy gaps.
-                        </p>
-                    </article>
+            <div class="experience-grid">
+                <article class="experience-card">
+                    <div class="card-title-row">
+                        <h3>Instructor</h3>
+                        <span>Summer 2026</span>
+                    </div>
+                    <p class="card-role">Warsaw Public Library</p>
+                    <p>Assisted in executing a community initiative utilizing a library grant. Developed curriculum for and led a comprehensive six-day introductory Python programming course designed for teens and adults to bridge digital literacy gaps.</p>
+                </article>
 
-                    <article class="rounded-[28px] bg-[#1d1d1f] p-8 shadow-sm ring-1 ring-white/10">
-                        <div class="flex flex-wrap items-center justify-between gap-3">
-                            <h3 class="text-2xl font-bold tracking-tight text-[#f5f5f7]">CS Education Research</h3>
-                            <span class="text-sm font-semibold text-[#a1a1a6]">2026 - Present</span>
-                        </div>
-                        <p class="mt-1 text-sm font-semibold text-[#2997ff]">Independent Research</p>
-                        <p class="mt-4 text-sm leading-7 text-[#a1a1a6]">
-                            Working with Dr. Michael Daley of University of Rochester, I developed an independent research based off of my 2026 summer coding class, as well as data from my high school, with the question, how do prior experience and different teaching styles affect students' abilities to learn how to code?
-                        </p>
-                    </article>
+                <article class="experience-card">
+                    <div class="card-title-row">
+                        <h3>CS Education Research</h3>
+                        <span>2026 - Present</span>
+                    </div>
+                    <p class="card-role">Independent Research</p>
+                    <p>Working with Dr. Michael Daley of University of Rochester, I developed an independent research based off of my 2026 summer coding class, as well as data from my high school, with the question, how do prior experience and different teaching styles affect students' abilities to learn how to code?</p>
+                </article>
 
-                    <article class="rounded-[28px] bg-[#1d1d1f] p-8 shadow-sm ring-1 ring-white/10">
-                        <div class="flex flex-wrap items-center justify-between gap-3">
-                            <h3 class="text-2xl font-bold tracking-tight text-[#f5f5f7]">Spotlight Theater</h3>
-                            <span class="text-sm font-semibold text-[#a1a1a6]">2026 - Present</span>
-                        </div>
-                        <p class="mt-1 text-sm font-semibold text-[#2997ff]">Job</p>
-                        <p class="mt-4 text-sm leading-7 text-[#a1a1a6]">
-                            Working at the movie theater, I learned how to multi-task effortlessly, clean efficiently, and most importantly, developed customer service skills.
-                        </p>
-                    </article>
+                <article class="experience-card">
+                    <div class="card-title-row">
+                        <h3>Spotlight Theater</h3>
+                        <span>2026 - Present</span>
+                    </div>
+                    <p class="card-role">Job</p>
+                    <p>Working at the movie theater, I learned how to multi-task effortlessly, clean efficiently, and most importantly, developed customer service skills.</p>
+                </article>
 
-                    <article class="rounded-[28px] bg-[#1d1d1f] p-8 shadow-sm ring-1 ring-white/10">
-                        <div class="flex flex-wrap items-center justify-between gap-3">
-                            <h3 class="text-2xl font-bold tracking-tight text-[#f5f5f7]">Peer Tutoring</h3>
-                            <span class="text-sm font-semibold text-[#a1a1a6]">December 2024 - June 2025</span>
-                        </div>
-                        <p class="mt-1 text-sm font-semibold text-[#2997ff]">Job</p>
-                        <p class="mt-4 text-sm leading-7 text-[#a1a1a6]">
-                            While tutoring, I developed strong communication skills by helping students understand math and science, as well as developing patience and flexibility by using teaching methods to meet the academic needs of students.
-                        </p>
-                    </article>
-                </div>
+                <article class="experience-card">
+                    <div class="card-title-row">
+                        <h3>Peer Tutoring</h3>
+                        <span>December 2024 - June 2025</span>
+                    </div>
+                    <p class="card-role">Job</p>
+                    <p>While tutoring, I developed strong communication skills by helping students understand math and science, as well as developing patience and flexibility by using teaching methods to meet the academic needs of students.</p>
+                </article>
             </div>
         </section>
 
-        <section id="projects" class="space-y-3 bg-[#111113] py-3">
-            <div class="bg-[#000000] px-5 py-24 text-center text-white sm:px-6">
-                <div class="mx-auto max-w-5xl">
-                    <p class="text-sm font-semibold text-[#86868b]">AI Engineering Stuff</p>
-                    <h2 class="mt-2 text-5xl font-black tracking-tight sm:text-7xl">SplitsAI</h2>
-                    <p class="mx-auto mt-5 max-w-3xl text-xl font-semibold leading-snug text-[#f5f5f7] sm:text-2xl">
-                        Same concept as the AI Running Coach, except now in a dedicated webpage with a full-stack front end and back end using Node.js, React, Clerk, Vercel, and Supabase. You can also create an account and sign in to see past AI responses, as well as being able to upload screenshots.
-                    </p>
-                    <div class="mt-7 flex flex-wrap justify-center gap-x-8 gap-y-3 text-lg font-medium text-[#2997ff]">
-                        <a href="https://splits-ai.vercel.app" target="_blank" rel="noopener noreferrer" class="hover:underline">Launch Dashboard &gt;</a>
-                        <a href="https://github.com/rushurov074/SplitsAI" target="_blank" rel="noopener noreferrer" class="hover:underline">View Repository &gt;</a>
+        <section id="projects" class="projects-section">
+            <article class="project-showcase project-black">
+                <div class="project-inner">
+                    <p class="eyebrow">AI Engineering Stuff</p>
+                    <h2>SplitsAI</h2>
+                    <p>Same concept as the AI Running Coach, except now in a dedicated webpage with a full-stack front end and back end using Node.js, React, Clerk, Vercel, and Supabase. You can also create an account and sign in to see past AI responses, as well as being able to upload screenshots.</p>
+                    <div class="link-row">
+                        <a href="https://splits-ai.vercel.app" target="_blank" rel="noopener noreferrer">Launch Dashboard &gt;</a>
+                        <a href="https://github.com/rushurov074/SplitsAI" target="_blank" rel="noopener noreferrer">View Repository &gt;</a>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="bg-[#1d1d1f] px-5 py-24 text-center sm:px-6">
-                <div class="mx-auto max-w-5xl">
-                    <p class="text-sm font-semibold text-[#a1a1a6]">LLMs · Google Gemini</p>
-                    <h2 class="mt-2 text-5xl font-black tracking-tight text-[#f5f5f7] sm:text-7xl">AI Running Coach</h2>
-                    <p class="mx-auto mt-5 max-w-3xl text-xl font-semibold leading-snug text-[#f5f5f7] sm:text-2xl">
-                        My very first AI project!!! This is a project made in Python with Streamlit and Gemini. It is an AI-powered running coach that analyzes running data to provide feedback and helpful advice for the next run.
-                    </p>
-                    <div class="mt-7 flex flex-wrap justify-center gap-x-8 gap-y-3 text-lg font-medium text-[#2997ff]">
-                        <a href="https://airunningcoach-apzdiofe8qnaqhd4dm53aa.streamlit.app" target="_blank" rel="noopener noreferrer" class="hover:underline">Launch Dashboard &gt;</a>
-                        <a href="https://github.com/rushurov074/AI_Running_Coach" target="_blank" rel="noopener noreferrer" class="hover:underline">View Repository &gt;</a>
+            <article class="project-showcase project-graphite">
+                <div class="project-inner">
+                    <p class="eyebrow">LLMs · Google Gemini</p>
+                    <h2>AI Running Coach</h2>
+                    <p>My very first AI project!!! This is a project made in Python with Streamlit and Gemini. It is an AI-powered running coach that analyzes running data to provide feedback and helpful advice for the next run.</p>
+                    <div class="link-row">
+                        <a href="https://airunningcoach-apzdiofe8qnaqhd4dm53aa.streamlit.app" target="_blank" rel="noopener noreferrer">Launch Dashboard &gt;</a>
+                        <a href="https://github.com/rushurov074/AI_Running_Coach" target="_blank" rel="noopener noreferrer">View Repository &gt;</a>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="bg-[#000000] px-5 py-24 text-center text-white sm:px-6">
-                <div class="mx-auto max-w-5xl">
-                    <p class="text-sm font-semibold text-[#86868b]">Predictive Modeling</p>
-                    <h2 class="mt-2 text-5xl font-black tracking-tight sm:text-7xl">March Madness Predictor</h2>
-                    <p class="mx-auto mt-5 max-w-4xl text-xl font-semibold leading-snug text-[#f5f5f7] sm:text-2xl">
-                        Built a full-stack March Madness prediction web-app with a KenPom-style predictive algorithm using adjusted efficiency margin, seed, win%, SOS, and recent form. I implemented Monte Carlo bracket simulation (up to 25,000 sims), live data scraping from BartTorvik, and logistic regression weight training on 15 years of tournament results. Then, deployed it via Flask + Render.
-                    </p>
-                    <div class="mt-7 flex flex-wrap justify-center gap-x-8 gap-y-3 text-lg font-medium text-[#2997ff]">
-                        <a href="https://bracket-brain-ptkd.onrender.com/" target="_blank" rel="noopener noreferrer" class="hover:underline">Launch Live App &gt;</a>
-                        <a href="https://github.com/rushurov074/hoop-oracle" target="_blank" rel="noopener noreferrer" class="hover:underline">Explore Code &gt;</a>
-                        <a href="./assets/MMresultspersonal.pdf" target="_blank" rel="noopener noreferrer" class="hover:underline">View Results &gt;</a>
+            <article class="project-showcase project-black">
+                <div class="project-inner wide">
+                    <p class="eyebrow">Predictive Modeling</p>
+                    <h2>March Madness Predictor</h2>
+                    <p>Built a full-stack March Madness prediction web-app with a KenPom-style predictive algorithm using adjusted efficiency margin, seed, win%, SOS, and recent form. I implemented Monte Carlo bracket simulation (up to 25,000 sims), live data scraping from BartTorvik, and logistic regression weight training on 15 years of tournament results. Then, deployed it via Flask + Render.</p>
+                    <div class="link-row">
+                        <a href="https://bracket-brain-ptkd.onrender.com/" target="_blank" rel="noopener noreferrer">Launch Live App &gt;</a>
+                        <a href="https://github.com/rushurov074/hoop-oracle" target="_blank" rel="noopener noreferrer">Explore Code &gt;</a>
+                        <a href="./assets/MMresultspersonal.pdf" target="_blank" rel="noopener noreferrer">View Results &gt;</a>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <div class="grid gap-3 bg-[#111113] lg:grid-cols-3">
-                <article class="bg-[#1d1d1f] px-5 py-20 text-center sm:px-8">
-                    <p class="text-sm font-semibold text-[#a1a1a6]">Full-Stack Simulation</p>
-                    <h2 class="mt-2 text-4xl font-black tracking-tight text-[#f5f5f7] sm:text-5xl">Earth 2025</h2>
-                    <p class="mx-auto mt-4 max-w-xl text-lg font-semibold leading-snug text-[#f5f5f7]">
-                        A clean UI-driven text simulator tasking players with discovering radioactive anomalies. Developed on a custom Python Flask RESTful API communicating across global systems via CORS to instantly serve live leaderboard metrics.
-                    </p>
-                    <div class="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-3 text-base font-medium text-[#2997ff]">
-                        <a href="https://rushurov074.github.io/Earth-2025HTML/" target="_blank" rel="noopener noreferrer" class="hover:underline">Play Live &gt;</a>
-                        <a href="https://github.com/rushurov074/Earth-2025leaderboard" target="_blank" rel="noopener noreferrer" class="hover:underline">Backend Setup &gt;</a>
+            <div class="project-mini-grid">
+                <article class="mini-project">
+                    <p class="eyebrow">Full-Stack Simulation</p>
+                    <h2>Earth 2025</h2>
+                    <p>A clean UI-driven text simulator tasking players with discovering radioactive anomalies. Developed on a custom Python Flask RESTful API communicating across global systems via CORS to instantly serve live leaderboard metrics.</p>
+                    <div class="link-row small-links">
+                        <a href="https://rushurov074.github.io/Earth-2025HTML/" target="_blank" rel="noopener noreferrer">Play Live &gt;</a>
+                        <a href="https://github.com/rushurov074/Earth-2025leaderboard" target="_blank" rel="noopener noreferrer">Backend Setup &gt;</a>
                     </div>
                 </article>
 
-                <article class="bg-[#000000] px-5 py-20 text-center text-white sm:px-8">
-                    <p class="text-sm font-semibold text-[#86868b]">Interactive Game</p>
-                    <h2 class="mt-2 text-4xl font-black tracking-tight sm:text-5xl">Shadowboxing</h2>
-                    <p class="mx-auto mt-4 max-w-xl text-lg font-semibold leading-snug text-[#f5f5f7]">
-                        A dynamic turn-based combination test built using asynchronous JavaScript promises. Face off against the computer to strike a matching look-and-point combination direction and claim a 3-hit win streak.
-                    </p>
-                    <div class="mt-6 text-base font-medium text-[#2997ff]">
-                        <a href="./shadowboxing/index.html" class="hover:underline">Play Game &gt;</a>
+                <article class="mini-project project-black">
+                    <p class="eyebrow">Interactive Game</p>
+                    <h2>Shadowboxing</h2>
+                    <p>A dynamic turn-based combination test built using asynchronous JavaScript promises. Face off against the computer to strike a matching look-and-point combination direction and claim a 3-hit win streak.</p>
+                    <div class="link-row small-links">
+                        <a href="./shadowboxing/index.html">Play Game &gt;</a>
                     </div>
                 </article>
 
-                <article class="bg-[#1d1d1f] px-5 py-20 text-center sm:px-8">
-                    <p class="text-sm font-semibold text-[#a1a1a6]">Teaching Initiative</p>
-                    <h2 class="mt-2 text-4xl font-black tracking-tight text-[#f5f5f7] sm:text-5xl">Intro To Python Class</h2>
-                    <p class="mx-auto mt-4 max-w-xl text-lg font-semibold leading-snug text-[#f5f5f7]">
-                        In the summer of 2026, I saw a need for better digital tools in my town, and helped the public library secure a grant to launch a new digital literacy program. I proposed to use this funding by teaching a six-day workshop for teens and adults.
-                    </p>
-                    <div class="mt-6 text-base font-medium text-[#2997ff]">
-                        <a href="./assets/Summer Programming Syllabus.pdf" target="_blank" rel="noopener noreferrer" class="hover:underline">Open Syllabus &gt;</a>
+                <article class="mini-project">
+                    <p class="eyebrow">Teaching Initiative</p>
+                    <h2>Intro To Python Class</h2>
+                    <p>In the summer of 2026, I saw a need for better digital tools in my town, and helped the public library secure a grant to launch a new digital literacy program. I proposed to use this funding by teaching a six-day workshop for teens and adults.</p>
+                    <div class="link-row small-links">
+                        <a href="./assets/Summer Programming Syllabus.pdf" target="_blank" rel="noopener noreferrer">Open Syllabus &gt;</a>
                     </div>
                 </article>
             </div>
         </section>
     </main>
 
-    <footer id="contact" class="bg-[#111113] px-5 py-14 sm:px-6">
-        <div class="mx-auto max-w-6xl border-t border-white/10 pt-8">
-            <div class="flex flex-col justify-between gap-8 md:flex-row md:items-center">
-                <div>
-                    <h2 class="text-2xl font-bold tracking-tight text-[#f5f5f7]">Let's keep coding.</h2>
-                    <p class="mt-2 max-w-xl text-sm leading-6 text-[#a1a1a6]">
-                        Thanks for checking out my work. I am continuing to build, learn, and share projects in AI, software engineering, data analysis, and computer science education.
-                    </p>
-                </div>
-                <div class="flex flex-wrap gap-x-6 gap-y-3 text-sm font-medium text-[#2997ff]">
-                    <a href="https://github.com/rushurov074" target="_blank" rel="noopener noreferrer" class="hover:underline">GitHub &gt;</a>
-                    <a href="#projects" class="hover:underline">Projects &gt;</a>
-                </div>
+    <footer id="contact" class="site-footer">
+        <div class="footer-inner">
+            <div>
+                <h2>Let's keep coding.</h2>
+                <p>Thanks for checking out my work. I am continuing to build, learn, and share projects in AI, software engineering, data analysis, and computer science education.</p>
             </div>
-            <p class="mt-10 text-xs text-[#6e6e73]">© 2026 Ruslan Ushurov</p>
+            <div class="footer-links">
+                <a href="https://github.com/rushurov074" target="_blank" rel="noopener noreferrer">GitHub &gt;</a>
+                <a href="#projects">Projects &gt;</a>
+            </div>
         </div>
+        <p class="copyright">© 2026 Ruslan Ushurov</p>
     </footer>
 
-    <a href="#" aria-label="Back to top" class="fixed bottom-5 right-5 rounded-full bg-[#1d1d1f] p-3 text-white shadow-xl transition-colors hover:bg-black">
-        <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+    <a href="#" aria-label="Back to top" class="back-to-top">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="m5 15 7-7 7 7"></path>
         </svg>
     </a>
