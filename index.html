@@ -7,37 +7,55 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png">
     <link rel="icon" type="image/svg+xml" href="./favicon.svg">
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-    <meta name="theme-color" content="#111113">
+    <meta name="theme-color" content="#17123b">
     <title>Ruslan Ushurov | Student Developer</title>
     <script defer src="https://cloud.umami.is/script.js" data-website-id="775607b7-261a-4ee5-afc1-3e16a8bd41f9"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="./site.css" rel="stylesheet">
 </head>
 <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
     <nav class="top-nav">
         <div class="nav-inner">
-            <a href="#" class="brand-link">Ruslan Ushurov</a>
+            <a href="#" class="brand-link"><span aria-hidden="true">✦</span> RUSLAN.EXE</a>
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
             </div>
-            <a href="https://github.com/rushurov074" target="_blank" rel="noopener noreferrer" class="nav-cta">GitHub</a>
+            <div class="nav-actions">
+                <button class="sound-toggle tactile-button" type="button" aria-pressed="false" aria-label="Turn interface sound on">SFX: OFF</button>
+                <a href="https://github.com/rushurov074" target="_blank" rel="noopener noreferrer" class="nav-cta tactile-button">GitHub ↗</a>
+            </div>
         </div>
     </nav>
 
     <header class="hero">
         <div class="hero-inner">
-            <p class="eyebrow">Class of 2028 · AI, software, and data</p>
-            <h1>Ruslan Ushurov</h1>
-            <p class="hero-lede">Student developer building AI tools, simulations, and predictive models.</p>
-            <p class="hero-copy">I am preparing for a future in machine learning, AI engineering, or software engineering by building real projects and teaching others how to code.</p>
-            <div class="link-row">
-                <a href="#projects">See my work &gt;</a>
-                <a href="./assets/Summer Programming Syllabus.pdf" target="_blank" rel="noopener noreferrer">View syllabus &gt;</a>
+            <div class="hero-sticker sticker-orbit sticker-blue" aria-hidden="true">BUILD<br>MODE</div>
+            <div class="hero-sticker sticker-star" aria-hidden="true">★</div>
+            <div class="hero-card reveal-item">
+                <div class="hero-card-topline">
+                    <button class="status-pill tactile-button" type="button" aria-pressed="false">
+                        <span class="status-light" aria-hidden="true"></span> AVAILABLE TO BUILD
+                    </button>
+                    <span class="pixel-label">PLAYER 01</span>
+                </div>
+                <p class="eyebrow">Class of 2028 · AI, software &amp; data</p>
+                <h1>Ruslan<br><span>Ushurov</span></h1>
+                <p class="hero-lede">I turn curious ideas into <em>useful, playful</em> software.</p>
+                <p class="hero-copy">Student developer building AI tools, simulations, predictive models, and more approachable ways for people to learn code.</p>
+                <div class="link-row hero-links">
+                    <a href="#projects" class="button-primary tactile-button">Browse the arcade <span aria-hidden="true">↓</span></a>
+                    <a href="./assets/Summer Programming Syllabus.pdf" target="_blank" rel="noopener noreferrer" class="button-secondary tactile-button">Read my syllabus ↗</a>
+                </div>
+                <div class="hero-console" aria-label="Current coding focus">
+                    <span class="console-prompt">&gt;_</span>
+                    <span>currently building with Python, JS, and lots of curiosity<span class="console-cursor" aria-hidden="true">_</span></span>
+                </div>
             </div>
         </div>
     </header>
@@ -131,79 +149,78 @@
         </section>
 
         <section id="projects" class="projects-section">
-            <article class="project-showcase project-black">
-                <div class="project-inner">
-                    <p class="eyebrow">AI Engineering Stuff</p>
-                    <h2>SplitsAI</h2>
-                    <p>Same concept as the AI Running Coach, except now in a dedicated webpage with a full-stack front end and back end using Node.js, React, Clerk, Vercel, and Supabase. You can also create an account and sign in to see past AI responses, as well as being able to upload screenshots.</p>
-                    <div class="link-row">
-                        <a href="https://splits-ai.vercel.app" target="_blank" rel="noopener noreferrer">Launch Dashboard &gt;</a>
-                        <a href="https://github.com/rushurov074/SplitsAI" target="_blank" rel="noopener noreferrer">View Repository &gt;</a>
-                    </div>
+            <div class="projects-heading">
+                <div>
+                    <p class="section-kicker">Project arcade</p>
+                    <h2>Pick a cartridge.<br>Press start.</h2>
                 </div>
-            </article>
-
-            <article class="project-showcase project-graphite">
-                <div class="project-inner">
-                    <p class="eyebrow">LLMs · Google Gemini</p>
-                    <h2>AI Running Coach</h2>
-                    <p>My very first AI project!!! This is a project made in Python with Streamlit and Gemini. It is an AI-powered running coach that analyzes running data to provide feedback and helpful advice for the next run.</p>
-                    <div class="link-row">
-                        <a href="https://airunningcoach-apzdiofe8qnaqhd4dm53aa.streamlit.app" target="_blank" rel="noopener noreferrer">Launch Dashboard &gt;</a>
-                        <a href="https://github.com/rushurov074/AI_Running_Coach" target="_blank" rel="noopener noreferrer">View Repository &gt;</a>
-                    </div>
+                <div class="project-filters" aria-label="Filter projects">
+                    <button class="filter-button is-active tactile-button" type="button" data-filter="all">ALL</button>
+                    <button class="filter-button tactile-button" type="button" data-filter="ai">AI + DATA</button>
+                    <button class="filter-button tactile-button" type="button" data-filter="web">WEB</button>
+                    <button class="filter-button tactile-button" type="button" data-filter="play">PLAY</button>
                 </div>
-            </article>
+            </div>
 
-            <article class="project-showcase project-black">
-                <div class="project-inner wide">
-                    <p class="eyebrow">Predictive Modeling</p>
-                    <h2>March Madness Predictor</h2>
-                    <p>Built a full-stack March Madness prediction web-app with a KenPom-style predictive algorithm using adjusted efficiency margin, seed, win%, SOS, and recent form. I implemented Monte Carlo bracket simulation (up to 25,000 sims), live data scraping from BartTorvik, and logistic regression weight training on 15 years of tournament results. Then, deployed it via Flask + Render.</p>
-                    <div class="link-row">
-                        <a href="https://bracket-brain-ptkd.onrender.com/" target="_blank" rel="noopener noreferrer">Launch Live App &gt;</a>
-                        <a href="https://github.com/rushurov074/hoop-oracle" target="_blank" rel="noopener noreferrer">Explore Code &gt;</a>
-                        <a href="./assets/MMresultspersonal.pdf" target="_blank" rel="noopener noreferrer">View Results &gt;</a>
-                    </div>
-                </div>
-            </article>
-
-            <div class="project-mini-grid">
-                <article class="mini-project">
-                    <p class="eyebrow">Full-Stack Simulation</p>
-                    <h2>Earth 2025</h2>
-                    <p>A clean UI-driven text simulator tasking players with discovering radioactive anomalies. Developed on a custom Python Flask RESTful API communicating across global systems via CORS to instantly serve live leaderboard metrics.</p>
-                    <div class="link-row small-links">
-                        <a href="https://rushurov074.github.io/Earth-2025HTML/" target="_blank" rel="noopener noreferrer">Play Live &gt;</a>
-                        <a href="https://github.com/rushurov074/Earth-2025leaderboard" target="_blank" rel="noopener noreferrer">Backend Setup &gt;</a>
+            <div class="project-grid">
+                <article class="project-card project-featured card-lilac" data-category="ai web">
+                    <div class="card-corner-label">01 / FEATURED BUILD</div>
+                    <div class="project-art splits-art" aria-hidden="true"><span>⌁</span><small>SPLITS<br>AI</small></div>
+                    <div class="project-content">
+                        <div class="project-badges"><span>LIVE DEMO</span><span>AI COACH</span></div>
+                        <h3>SplitsAI</h3>
+                        <p>A full-stack running coach that turns workout data and screenshots into helpful next-run feedback — with saved history for every athlete.</p>
+                        <div class="tech-tags"><span>React</span><span>Node.js</span><span>Supabase</span><span>Gemini</span></div>
+                        <div class="card-links"><a href="https://splits-ai.vercel.app" target="_blank" rel="noopener noreferrer">Launch app ↗</a><a href="https://github.com/rushurov074/SplitsAI" target="_blank" rel="noopener noreferrer">Code ↗</a></div>
                     </div>
                 </article>
 
-                <article class="mini-project project-black">
-                    <p class="eyebrow">Interactive Game</p>
-                    <h2>Shadowboxing</h2>
-                    <p>A dynamic turn-based combination test built using asynchronous JavaScript promises. Face off against the computer to strike a matching look-and-point combination direction and claim a 3-hit win streak.</p>
-                    <div class="link-row small-links">
-                        <a href="./shadowboxing/index.html">Play Game &gt;</a>
+                <article class="project-card card-yellow" data-category="ai">
+                    <div class="card-corner-label">02 / FIRST AI</div>
+                    <div class="project-art coach-art" aria-hidden="true"><span>⌁</span><small>RUN<br>SMART</small></div>
+                    <div class="project-content">
+                        <div class="project-badges"><span>LLMS</span><span>PYTHON</span></div>
+                        <h3>AI Running Coach</h3>
+                        <p>My first AI project: a Streamlit coach that reads run data and suggests what to do next.</p>
+                        <div class="tech-tags"><span>Python</span><span>Streamlit</span><span>Gemini</span></div>
+                        <div class="card-links"><a href="https://airunningcoach-apzdiofe8qnaqhd4dm53aa.streamlit.app" target="_blank" rel="noopener noreferrer">Try it ↗</a><a href="https://github.com/rushurov074/AI_Running_Coach" target="_blank" rel="noopener noreferrer">Code ↗</a></div>
                     </div>
                 </article>
 
-                <article class="mini-project">
-                    <p class="eyebrow">Teaching Initiative</p>
-                    <h2>Intro To Python Class</h2>
-                    <p>In the summer of 2026, I saw a need for better digital tools in my town, and helped the public library secure a grant to launch a new digital literacy program. I proposed to use this funding by teaching a six-day workshop for teens and adults.</p>
-                    <div class="link-row small-links">
-                        <a href="./assets/Summer Programming Syllabus.pdf" target="_blank" rel="noopener noreferrer">Open Syllabus &gt;</a>
+                <article class="project-card card-blue" data-category="ai web">
+                    <div class="card-corner-label">03 / DATA LAB</div>
+                    <div class="project-art bracket-art" aria-hidden="true"><span>🏀</span><small>25K<br>SIMS</small></div>
+                    <div class="project-content">
+                        <div class="project-badges"><span>PREDICTIVE MODEL</span><span>LIVE DATA</span></div>
+                        <h3>March Madness Predictor</h3>
+                        <p>A full-stack bracket simulator using a KenPom-style model, logistic regression, and 25,000 Monte Carlo simulations.</p>
+                        <div class="tech-tags"><span>Python</span><span>Flask</span><span>ML</span><span>Scraping</span></div>
+                        <div class="card-links"><a href="https://bracket-brain-ptkd.onrender.com/" target="_blank" rel="noopener noreferrer">Launch app ↗</a><a href="https://github.com/rushurov074/hoop-oracle" target="_blank" rel="noopener noreferrer">Code ↗</a><a href="./assets/MMresultspersonal.pdf" target="_blank" rel="noopener noreferrer">Results ↗</a></div>
                     </div>
                 </article>
 
-                <article class="mini-project project-black">
-                    <p class="eyebrow">Web App</p>
-                    <h2>colemanOS</h2>
-                    <p>This is a Keon Coleman-themed Operating System. Keon Coleman has been basically my favorite NFL player since he was drafted. Even through all the hate he gets, I still buy his jerseys. This WebOS has a little welcome page with a description of who he is, then an article app with a real news post, a weather app that shows the live weather in Buffalo, NY, and finally a little quote generator that randomly shows you his most popular quotes. </p>
-                    <div class="link-row small-links">
-                        <a href="https://www.rushurov.me/ColemanOS/" target="_blank" rel="noopener noreferrer">Launch OS &gt;</a>
-                        </div>
+                <article class="project-card card-green" data-category="web play">
+                    <div class="card-corner-label">04 / SIMULATION</div>
+                    <div class="project-art earth-art" aria-hidden="true"><span>◉</span><small>EARTH<br>2025</small></div>
+                    <div class="project-content"><div class="project-badges"><span>GAME JAM</span><span>FULL-STACK</span></div><h3>Earth 2025</h3><p>Search for radioactive anomalies in a text simulator with a live global leaderboard.</p><div class="tech-tags"><span>Flask</span><span>REST API</span><span>CORS</span></div><div class="card-links"><a href="https://rushurov074.github.io/Earth-2025HTML/" target="_blank" rel="noopener noreferrer">Play ↗</a><a href="https://github.com/rushurov074/Earth-2025leaderboard" target="_blank" rel="noopener noreferrer">Code ↗</a></div></div>
+                </article>
+
+                <article class="project-card card-pink" data-category="play web">
+                    <div class="card-corner-label">05 / REFLEX TEST</div>
+                    <div class="project-art shadow-art" aria-hidden="true"><span>☝</span><small>HIT<br>COMBO</small></div>
+                    <div class="project-content"><div class="project-badges"><span>PLAYABLE</span><span>ASYNC JS</span></div><h3>Shadowboxing</h3><p>A quick look-and-point battle against the computer. Chain three hits to win.</p><div class="tech-tags"><span>JavaScript</span><span>Promises</span><span>Game Logic</span></div><div class="card-links"><a href="./shadowboxing/index.html">Play game ↗</a></div></div>
+                </article>
+
+                <article class="project-card card-cream" data-category="web">
+                    <div class="card-corner-label">06 / FAN OS</div>
+                    <div class="project-art os-art" aria-hidden="true"><span>▣</span><small>COLEMAN<br>OS</small></div>
+                    <div class="project-content"><div class="project-badges"><span>WEB APP</span><span>IN LAB</span></div><h3>colemanOS</h3><p>A Keon Coleman-themed mini operating system with weather, news, and a quote generator.</p><div class="tech-tags"><span>JavaScript</span><span>APIs</span><span>UI Design</span></div><div class="card-links"><a href="https://www.rushurov.me/ColemanOS/" target="_blank" rel="noopener noreferrer">Launch OS ↗</a></div></div>
+                </article>
+
+                <article class="project-card card-orange" data-category="web">
+                    <div class="card-corner-label">07 / TEACHING</div>
+                    <div class="project-art class-art" aria-hidden="true"><span>⌘</span><small>PYTHON<br>101</small></div>
+                    <div class="project-content"><div class="project-badges"><span>COMMUNITY</span><span>6-DAY CLASS</span></div><h3>Intro to Python Class</h3><p>A Warsaw Public Library workshop designed to make programming feel accessible from day one.</p><div class="tech-tags"><span>Curriculum</span><span>Python</span><span>Teaching</span></div><div class="card-links"><a href="./assets/Summer Programming Syllabus.pdf" target="_blank" rel="noopener noreferrer">Open syllabus ↗</a><a href="https://github.com/rushurov074/Warsaw-Public-Library-Summer-Coding-Class-2026" target="_blank" rel="noopener noreferrer">View repo ↗</a></div></div>
                 </article>
             </div>
         </section>
@@ -228,5 +245,54 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="m5 15 7-7 7 7"></path>
         </svg>
     </a>
+    <script>
+        // The grid's highlight follows a pointer without replacing the user's cursor.
+        document.addEventListener('pointermove', (event) => {
+            document.documentElement.style.setProperty('--pointer-x', `${event.clientX}px`);
+            document.documentElement.style.setProperty('--pointer-y', `${event.clientY}px`);
+        });
+
+        // A small Web Audio blip keeps the interaction optional and asset-free.
+        const soundToggle = document.querySelector('.sound-toggle');
+        let soundEnabled = false;
+        function clickSound() {
+            if (!soundEnabled || !window.AudioContext) return;
+            const context = new AudioContext();
+            const oscillator = context.createOscillator();
+            const gain = context.createGain();
+            oscillator.frequency.value = 260;
+            gain.gain.setValueAtTime(0.045, context.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.001, context.currentTime + 0.06);
+            oscillator.connect(gain).connect(context.destination);
+            oscillator.start();
+            oscillator.stop(context.currentTime + 0.06);
+        }
+        soundToggle.addEventListener('click', () => {
+            soundEnabled = !soundEnabled;
+            soundToggle.textContent = `SFX: ${soundEnabled ? 'ON' : 'OFF'}`;
+            soundToggle.setAttribute('aria-pressed', soundEnabled);
+            soundToggle.setAttribute('aria-label', `Turn interface sound ${soundEnabled ? 'off' : 'on'}`);
+            clickSound();
+        });
+        document.querySelectorAll('.tactile-button, .card-links a').forEach((element) => {
+            element.addEventListener('click', () => clickSound());
+        });
+
+        document.querySelectorAll('.filter-button').forEach((button) => {
+            button.addEventListener('click', () => {
+                const filter = button.dataset.filter;
+                document.querySelectorAll('.filter-button').forEach((item) => item.classList.toggle('is-active', item === button));
+                document.querySelectorAll('.project-card').forEach((card) => {
+                    card.hidden = filter !== 'all' && !card.dataset.category.split(' ').includes(filter);
+                });
+            });
+        });
+
+        document.querySelector('.status-pill').addEventListener('click', (event) => {
+            const active = event.currentTarget.getAttribute('aria-pressed') === 'true';
+            event.currentTarget.setAttribute('aria-pressed', String(!active));
+            event.currentTarget.lastChild.textContent = active ? ' AVAILABLE TO BUILD' : ' LET\'S BUILD SOMETHING';
+        });
+    </script>
 </body>
 </html>
